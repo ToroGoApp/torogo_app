@@ -41,3 +41,12 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+#Google API Key | Review secret detected in lib/firebase_options.dart#L47 • commit 7d74a4f7
+#Google API Key | Review secret detected in lib/firebase_options.dart#L57 • commit 7d74a4f7
+firebase_options.dart
+
+#Google API Key Review secret detected in ...er/GoogleService-Info.plist#L6 • commit 7d74a4f7
+GoogleService-Info.plist
+
+google-services.json
