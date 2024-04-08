@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:togosv_01/src/styles/color.dart';
+import 'package:togosv_01/src/global/color.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:togosv_01/src/routes/routes.dart';
 import 'firebase_options.dart';
 
 void main() async {
@@ -26,12 +27,10 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-        home: Scaffold(
-      backgroundColor: light,
-      body: Center(
-        child: Text('Hola Mundo'),
-      ),
-    ));
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      routes: routes,
+      initialRoute: 'welcome',
+    );
   }
 }
